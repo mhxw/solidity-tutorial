@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Solidity Tutorial',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -29,7 +29,15 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      zh: {
+        label: '简体中文',
+      },
+    },
   },
 
   presets: [
@@ -42,14 +50,24 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-              'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+              'https://github.com/mhxw/solidity-tutorial/',
+          editLocalizedFiles: false,
+          editCurrentVersion: false,
+          routeBasePath: 'docs',
+          include: ['**/*.md', '**/*.mdx'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-              'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+              'https://github.com/mhxw/solidity-tutorial/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -64,19 +82,23 @@ const config = {
         // Replace with your project's social card
         image: 'img/docusaurus-social-card.jpg',
         navbar: {
-          title: 'My Site',
+          title: 'Solidity Tutorial',
           logo: {
-            alt: 'My Site Logo',
+            alt: 'Solidity Tutorial Logo',
             src: 'img/logo.svg',
           },
           items: [
             {
               type: 'doc',
               docId: 'intro',
-              position: 'left',
+              position: 'right',
               label: 'Tutorial',
             },
-            {to: '/blog', label: 'Blog', position: 'left'},
+            {to: '/blog', label: 'Blog', position: 'right'},
+            {
+              type: 'localeDropdown',
+              position: 'right',
+            },
             {
               href: 'https://github.com/facebook/docusaurus',
               label: 'GitHub',
@@ -122,7 +144,7 @@ const config = {
                 },
                 {
                   label: 'GitHub',
-                  href: 'https://github.com/facebook/docusaurus',
+                  href: 'https://github.com/mhxw/solidity-tutorial/tree/main/',
                 },
               ],
             },
