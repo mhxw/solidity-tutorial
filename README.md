@@ -47,4 +47,7 @@ yarn run start
 yarn run start -- --locale zh
 yarn write-translations
 yarn write-translations --locale zh
+yarn run build
+yarn run serve
+GIT_USER=mhxw yarn deploy
 ```

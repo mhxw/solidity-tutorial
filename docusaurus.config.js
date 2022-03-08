@@ -18,8 +18,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'mhxw', // Usually your GitHub org/user name.
+  projectName: 'solidity-tutorial', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -100,7 +100,7 @@ const config = {
               position: 'right',
             },
             {
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/mhxw/solidity-tutorial',
               label: 'GitHub',
               position: 'right',
             },
