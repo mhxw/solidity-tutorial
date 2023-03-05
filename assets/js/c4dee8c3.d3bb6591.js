@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksolidity_tutorial=self.webpackChunksolidity_tutorial||[]).push([[416],{4464:t=>{t.exports=JSON.parse('{"label":"facebook","permalink":"/solidity-tutorial/blog/tags/facebook","allTagsPath":"/solidity-tutorial/blog/tags","count":1}')}}]);
